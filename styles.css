@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+.navbar {
+  font-size: 200%;
+}
+
 main {
   margin: 5em 0 2em 0;
 }
