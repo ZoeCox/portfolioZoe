@@ -6,3 +6,18 @@ body {
 .hidden {
   display: none;
 }
+
+.card {
+  margin: 0 0.25em 0.5em 0.25em;
+  width: 18rem;
+}
+
+@media (max-width: 580px) {
+  .card {
+    width: 10rem;
+    height: 20rem;
+  }
+  .card-text {
+    display: none;
+  }
+}
