@@ -12,6 +12,10 @@ body {
   font-size: 150%;
 }
 
+.modal {
+  color: black;
+}
+
 main {
   margin: 5em 0 2em 0;
 }
