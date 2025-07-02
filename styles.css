@@ -25,6 +25,25 @@ main {
   width: 18rem;
 }
 
+.card-body {
+  padding: none;
+}
+
+.image-btn-container {
+  position: relative;
+}
+
+#dogSite-tile-button {
+  height: 65%;
+}
+
+.modalBtn {
+  position: absolute;
+  top: 50;
+  height: 100%;
+  width: 100%;
+}
+
 footer {
   margin-bottom: 1em;
 }

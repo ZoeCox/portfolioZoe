@@ -5,11 +5,11 @@ const dogSiteBtn = document.querySelector("#dogSite-tile-button");
 const demoGameBtn = document.querySelector("#demoGame-tile-button");
 const memoryGameBtn = document.querySelector("#memoryGame-tile-button");
 const textGameBtn = document.querySelector("#textGame-tile-button");
-const cards = [dogSiteBtn, demoGameBtn, memoryGameBtn, textGameBtn];
+const buttons = [dogSiteBtn, demoGameBtn, memoryGameBtn, textGameBtn];
 
 const dogSiteImg = new Image();
-dogSiteImg.src = "imagesdogToyPage.png";
-//???
+dogSiteImg.src = "dogToyPage.png";
+//??? will NOT LOAD from folder?!?!
 // const demoGameImg=
 // const memoryGameImg =
 // const textGameImg =
@@ -20,7 +20,7 @@ const dogSiteContent = {
     "This is made to mimic a real E-Commerce site themed around the sale of dog toys. It includes product pages for each item, ability to make a 'favourites' list, basket facility, and profile management. I made use of broswer local storage facilities to ensure basket persistence, and retention of profile settings betweeen users' visits.",
   frameworks:
     "This is a site made with Vanilla JavaScript (ES6), HTML 5 and standard CSS. ",
-  images: modalContent.appendChild(dogSiteImg),
+  images: dogSiteImg,
   githubRepo: "GitHub Repo: https://github.com/ZoeCox/Dog-Toy-Site",
 };
 
@@ -54,11 +54,13 @@ const textGameContent = {
   githubRepo: `GitHub Repo: https://github.com/ZoeCox/tbag`,
 };
 
-for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("click", () => {
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", () => {
     console.log(`option ${i} clicked`);
-    modalContent.innerHTML = "";
-    switch (cards[i]) {
+    // buttons[i].blur();
+    //to shift focus off of descended button from modal, because aria hidden attr is screaming? why?? also this doesn't work!
+    buttons[i].innerHTML = "";
+    switch (buttons[i]) {
       case dogSiteBtn:
         console.log("dog option clicked");
         for (const value in dogSiteContent) {
