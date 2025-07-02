@@ -25,12 +25,18 @@ main {
   width: 18rem;
 }
 
-.card-body {
-  padding: none;
+#dogToys-card {
+  padding-bottom: 1.5em;
 }
 
 .image-btn-container {
   position: relative;
+}
+
+.image-btn-container:hover {
+  .card-img-top {
+    border: 0.15em solid black;
+  }
 }
 
 #dogSite-tile-button {
@@ -42,6 +48,28 @@ main {
   top: 50;
   height: 100%;
   width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.modalBtn:hover {
+  background-color: transparent;
+}
+
+#info-container {
+  display: inline block;
+}
+/* ??? */
+
+#zoe-img {
+  display: inline block;
+
+  height: 50vh;
+  width: 45vw;
+}
+
+#info-text {
+  display: inline-block;
 }
 
 footer {
