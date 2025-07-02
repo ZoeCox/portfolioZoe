@@ -56,20 +56,17 @@ main {
   background-color: transparent;
 }
 
-#info-container {
-  display: inline block;
+#info-container,
+#info-text {
+  font-size: 1.25em;
+  display: block;
 }
-/* ??? */
 
 #zoe-img {
-  display: inline block;
-
-  height: 50vh;
-  width: 45vw;
-}
-
-#info-text {
-  display: inline-block;
+  height: 29rem;
+  width: 27rem;
+  float: right;
+  margin: 1em 1em 0 1em;
 }
 
 footer {
@@ -87,5 +84,18 @@ footer {
   }
   .card-text {
     display: none;
+  }
+
+  #zoe-img {
+    float: none;
+    margin: 0em 1em 1em 1em;
+    height: 21rem;
+    width: 20rem;
+  }
+
+  #info-text {
+    font-size: 1.15em;
+    float: none;
+    text-align: center !important;
   }
 }
