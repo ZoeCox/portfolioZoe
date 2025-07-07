@@ -1,5 +1,6 @@
 :root {
   --bg-color: #3a3c3f;
+  --hover-color: #28292b;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 main {
-  margin: 5em 0 2em 0;
+  margin: 7em 0 2em 0;
 }
 
 img,
@@ -29,6 +30,21 @@ video {
   width: 50%;
   font-size: 125%;
   margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#memoryGame-card:hover,
+#textGame-card:hover {
+  box-shadow: 5px 10px var(--hover-color);
+}
+
+#dogToys-card:hover,
+#demoGame-card:hover {
+  box-shadow: -5px 10px var(--hover-color);
+}
+
+.card-title,
+.modal-header {
+  text-decoration: underline;
 }
 
 .card-text {
@@ -76,7 +92,12 @@ video {
 }
 
 footer {
-  margin-bottom: 1em;
+  margin: -1em 0 1em 0;
+}
+
+button {
+  height: 150%;
+  width: 150%;
 }
 
 .hidden {

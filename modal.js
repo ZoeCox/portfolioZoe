@@ -7,15 +7,6 @@ const memoryGameBtn = document.querySelector("#memoryGame-tile-button");
 const textGameBtn = document.querySelector("#textGame-tile-button");
 const buttons = [dogSiteBtn, demoGameBtn, memoryGameBtn, textGameBtn];
 
-const dogSiteImg = new Image();
-dogSiteImg.src = "./images/dogToyPage.png";
-const demoGameImg = new Image();
-demoGameImg.src = "./images/fantasyGame.png";
-const memoryGameImg = new Image();
-memoryGameImg.src = "./images/simonGame.png";
-const textGameImg = new Image();
-textGameImg.src = "./images/textGame.png";
-
 const dogSiteVid = document.createElement("video");
 dogSiteVid.src = "./recordings/dogSiteRecording.mp4";
 dogSiteVid.setAttribute("controls", "");
