@@ -1,6 +1,7 @@
 :root {
   --bg-color: #3a3c3f;
   --hover-color: #28292b;
+  --theme-purple: rgb(172, 138, 216);
 }
 
 body {
@@ -16,6 +17,14 @@ body {
 
 a {
   font-size: 140%;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: var(--theme-purple);
 }
 
 .modal {
