@@ -9,8 +9,13 @@ body {
   color: white;
 }
 
-.navbar {
-  font-size: 125%;
+.navbar,
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 140%;
 }
 
 .modal {
@@ -97,28 +102,52 @@ footer {
   margin: -1em 0 1em 0;
 }
 
-button {
-  height: 4rem;
-  width: 8rem;
+.social-btn {
+  font-size: 100%;
+  margin: 0 0.5em 0 0.5em;
 }
 
 .hidden {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   #project-container {
-    width: 60vw;
+    display: flex;
+  }
+  #project-row1 {
+    max-width: 50%;
+    display: flex !important;
+  }
+  #project-row2 {
+    max-width: 50%;
+    display: flex !important;
   }
 }
 
 @media (max-width: 580px) {
-  .card-text {
-    display: none;
+  #project-container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #project-row1 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #project-row2 {
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .card {
-    margin: 0.25rem;
+    width: 95%;
+  }
+
+  .card-text {
+    display: none;
   }
 
   #zoe-img {

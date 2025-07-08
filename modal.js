@@ -1,3 +1,8 @@
+console.log(
+  "viewport width is " + window.innerWidth,
+  "viewport height is " + window.innerHeight
+);
+
 const modalBox = document.querySelector("#modal-box");
 const modalContent = document.querySelector("#modal-body-content");
 const modalTitle = document.querySelector("#modal-title-holder");
