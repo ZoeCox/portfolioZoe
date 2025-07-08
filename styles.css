@@ -4,6 +4,10 @@
   --theme-purple: rgb(172, 138, 216);
 }
 
+html {
+  scroll-timeline: --page-scroll block;
+}
+
 body {
   font-family: "Libertinus Math", sans-serif;
   background-color: var(--bg-color);
@@ -27,12 +31,29 @@ a:hover {
   color: var(--theme-purple);
 }
 
-.modal {
-  color: black;
-}
-
 main {
   margin: 7em 0 2em 0;
+}
+
+#intro {
+  position: relative;
+}
+
+#intro-text {
+  position: relative;
+  margin-bottom: 3em;
+}
+
+#scroll-banner {
+  width: 100vw;
+  position: absolute;
+  left: 35%;
+  background-color: var(--theme-purple);
+  height: 6rem;
+}
+
+.modal {
+  color: black;
 }
 
 img,
@@ -118,6 +139,15 @@ footer {
 
 .hidden {
   display: none;
+}
+
+@keyframes banner-scroll-animate {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @media (min-width: 1500px) {
