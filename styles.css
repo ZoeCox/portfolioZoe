@@ -168,10 +168,12 @@ footer {
 
 @media (max-width: 580px) {
   main {
+    margin-top: 8em;
     overflow-x: hidden;
   }
+
   #intro-text {
-    padding-top: 3.5em;
+    padding-top: 2em;
   }
 
   #project-container {
