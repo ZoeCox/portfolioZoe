@@ -4,6 +4,10 @@
   --theme-purple: rgb(172, 138, 216);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Libertinus Math", sans-serif;
   background-color: var(--bg-color);
