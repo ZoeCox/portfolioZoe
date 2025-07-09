@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-timeline: --page-scroll block;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -32,24 +32,26 @@ a:hover {
 }
 
 main {
-  margin: 7em 0 2em 0;
+  margin: 4em 0 2em 0;
 }
 
 #intro {
   position: relative;
+  margin-bottom: 2em;
 }
 
 #intro-text {
   position: relative;
-  margin-bottom: 3em;
+  padding-top: 2em;
+  margin-bottom: 1em;
 }
 
 #scroll-banner {
-  width: 100vw;
+  z-index: -1;
+  width: 110vw;
   position: absolute;
-  left: 35%;
   background-color: var(--theme-purple);
-  height: 6rem;
+  height: 100%;
 }
 
 .modal {
@@ -139,15 +141,6 @@ footer {
 
 .hidden {
   display: none;
-}
-
-@keyframes banner-scroll-animate {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
 }
 
 @media (min-width: 1500px) {
