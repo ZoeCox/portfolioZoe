@@ -1,17 +1,9 @@
 const headerBar = document.querySelector("#scroll-banner");
-let headerBarLeftVal = 120;
+let headerBarLeftVal = 125;
 headerBar.style.left = `${headerBarLeftVal}%`;
-const scrollYTracker = () => {
-  let viewHeight = window.innerHeight;
-  let scrollYsPosition = window.scrollY;
-  console.log(viewHeight, scrollYsPosition);
-  let percentScrolled;
-};
-
-scrollYTracker();
 
 document.addEventListener("scroll", () => {
-  if (headerBarLeftVal <= -20) {
+  if (headerBarLeftVal <= -30) {
     return;
   } else {
     headerBarLeftVal -= 5;

@@ -28,7 +28,7 @@ a:hover {
 }
 
 main {
-  margin: 4em 0 2em 0;
+  margin: 6em 0 2em 0;
 }
 
 #intro {
@@ -44,7 +44,7 @@ main {
 
 #scroll-banner {
   z-index: -1;
-  width: 200vw;
+  width: 250vw;
   position: absolute;
   background-color: var(--theme-purple);
   height: 100%;
