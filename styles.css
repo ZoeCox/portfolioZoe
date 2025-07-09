@@ -116,7 +116,7 @@ video {
 }
 
 #info-container {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: -0.5em;
 }
 
@@ -134,7 +134,7 @@ video {
   height: 29rem;
   width: 27rem;
   float: right;
-  margin: 1em 1em 0 0;
+  margin: 0.5em 1em 1em 0.5em;
   border-radius: 2.5%;
   border: solid 0.15em black;
 }
