@@ -4,10 +4,6 @@
   --theme-purple: rgb(172, 138, 216);
 }
 
-html {
-  overflow-x: hidden !important;
-}
-
 body {
   font-family: "Libertinus Math", sans-serif;
   background-color: var(--bg-color);
@@ -48,7 +44,7 @@ main {
 
 #scroll-banner {
   z-index: -1;
-  width: 110vw;
+  width: 200vw;
   position: absolute;
   background-color: var(--theme-purple);
   height: 100%;
@@ -102,6 +98,10 @@ video {
   height: 65%;
 }
 
+#dog-toy-visitSite-btn {
+  margin-bottom: 1em;
+}
+
 .modalBtn {
   position: absolute;
   top: 50;
@@ -115,17 +115,26 @@ video {
   background-color: transparent;
 }
 
+#info-container {
+  margin-top: 2em;
+  margin-left: -0.5em;
+}
+
 #info-container,
 #info-text {
   font-size: 1.25em;
   display: block;
 }
 
+#text-start {
+  margin-left: 1em;
+}
+
 #zoe-img {
   height: 29rem;
   width: 27rem;
   float: right;
-  margin: 1em 1em 0 1em;
+  margin: 1em 1em 0 0;
   border-radius: 2.5%;
   border: solid 0.15em black;
 }
@@ -158,6 +167,13 @@ footer {
 }
 
 @media (max-width: 580px) {
+  main {
+    overflow-x: hidden;
+  }
+  #intro-text {
+    padding-top: 3.5em;
+  }
+
   #project-container {
     display: flex;
     flex-direction: column !important;
@@ -193,5 +209,9 @@ footer {
     font-size: 1.15em;
     float: none;
     text-align: center !important;
+  }
+
+  #info-container {
+    margin-top: 2em;
   }
 }
