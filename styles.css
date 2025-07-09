@@ -48,7 +48,7 @@ main {
 
 #scroll-banner {
   z-index: -1;
-  width: 250vw;
+  width: 400vw;
   position: absolute;
   background-color: var(--theme-purple);
   height: 100%;
@@ -172,7 +172,7 @@ footer {
 
 @media (max-width: 580px) {
   main {
-    margin-top: 8em;
+    margin-top: 7em;
     overflow-x: hidden;
   }
 
@@ -215,9 +215,5 @@ footer {
     font-size: 1.15em;
     float: none;
     text-align: center !important;
-  }
-
-  #info-container {
-    margin-top: 2em;
   }
 }
