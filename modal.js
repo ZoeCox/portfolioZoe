@@ -86,8 +86,6 @@ const textGameContent = {
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", () => {
-    // buttons[i].blur();
-    //to shift focus off of descended button from modal, because aria hidden attr is screaming? why?? also this doesn't work!
     modalContent.innerHTML = "";
     const brk = document.createElement("br");
     switch (buttons[i]) {

@@ -48,7 +48,7 @@ main {
 
 #scroll-banner {
   z-index: -1;
-  width: 400vw;
+  width: 500vw;
   position: absolute;
   background-color: var(--theme-purple);
   height: 100%;
